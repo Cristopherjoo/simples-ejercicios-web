@@ -1,0 +1,25 @@
+ .caja1 {
+    height: 200px;
+}
+
+#text1 {
+    background-color: rgb(228, 58, 92);
+}
+
+#text2 {
+    width: 40%;
+    background-color: rgb(226, 115, 75);
+    display: none;
+}
+
+#caja2 {
+    height: 300px;
+}
+
+#caja3 {
+    font-size: 18px;
+}
+
+#caja3.clicGrande {
+    font-size: 26px;
+} 
