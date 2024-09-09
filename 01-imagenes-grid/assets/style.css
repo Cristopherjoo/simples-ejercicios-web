@@ -4,7 +4,7 @@
 /* Estilos para el contenedor de la galería */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     grid-template-areas:
         "img1 img2 img3";
@@ -44,24 +44,24 @@
 /* Pantallas medianas */
 @media (min-width: 992px) and (max-width: 1199px) {
     .gallery {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(8, 1fr);
 
         grid-template-areas:
-            "img1 img1 img1 img2 img2 img2"
+            "img1 img1 img1 img1 img2 img2 img2 img2"
 
-            " . img3 img3 img3 img3 .";
+            " . . img3 img3 img3 img3 . .";
     }
 }
 
 /* Pantallas pequeñas  */
 @media (min-width: 768px) and (max-width: 991px) {
     .gallery {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(8, 1fr);
 
         grid-template-areas:
-            "img1 img1 img1 img2 img2 img2"
+           "img1 img1 img1 img1 img2 img2 img2 img2"
 
-            " . img3 img3 img3 img3 .";
+            " . . img3 img3 img3 img3 . .";
     }
 }
 
