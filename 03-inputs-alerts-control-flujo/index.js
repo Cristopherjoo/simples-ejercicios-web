@@ -28,19 +28,25 @@ function mostrarMenu() {
         `Seleccione que decea hacer:\n1. Ver saldo\n2. Realizar giro\n3. Realizar depósito\n4. Salir`
     );
 
-    if (opcion === "1") {
-        verSaldo();
-    } else if (opcion === "2") {
-        realizarGiro();
-    } else if (opcion === "3") {
-        realizarDeposito();
-    } else if (opcion === "4") {
-        salir();
-    } else {
-        alert("Por favor selecciona una opción del 1 al 4.");
-        mostrarMenu();
-    }
-}
+switch(opcion){
+    case "1":
+        opcion: verSaldo();
+        break;
+    case "2":
+        opcion: realizarGiro();
+        break;
+    case "3":
+        opcion: realizarDeposito();
+        break;    
+    case "4":
+        opcion: salir();
+        break;
+
+        default: alert("Por favor selecciona una opción del 1 al 4.");
+                 mostrarMenu();
+};
+
+ }
 
 function verSaldo() {
     alert(`Su saldo actual es: $${clienteActual.saldo}`);
@@ -85,7 +91,9 @@ function realizarDeposito() {
 function salir() {
     alert("Gracias por preferir nuestros servicios");
     clienteActual = null;
-    login();
+    
 }
 
 login();
+
+
